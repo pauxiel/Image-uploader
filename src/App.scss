@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+
+#root, .App {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+.App {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+
