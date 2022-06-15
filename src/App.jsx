@@ -3,6 +3,8 @@
 import "./App.scss";
 import Container from "./layout/container/Container";
 import ImageInput from "./views/image-input/ImageInput";
+import Loading from './views/loading/Loading';
+import ImageUploaded from './views/image-uploaded/ImageUploaded';
 // import DragandDrop from "./components/drag-and-drop/DragandDrop";
 
 function App() {
@@ -10,8 +12,10 @@ function App() {
   return (
     <div className="App">
       <Container>
-          <ImageInput/>
+          {/* <ImageInput/> */}
            {/* <DragandDrop/> */}
+           <Loading/>
+           {/* <ImageUploaded/> */}
         </Container>
     </div>
   );
