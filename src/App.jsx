@@ -7,8 +7,7 @@ import ImageInput from "./views/image-input/ImageInput";
 import Loading from './views/loading/Loading';
 import ImageUploaded from './views/image-uploaded/ImageUploaded';
 // import DragandDrop from "./components/drag-and-drop/DragandDrop";
-  
-State = 
+
 function App() {
   // const [count, setCount] = useState(0)
   const [state, setState] = useState('choosing');
