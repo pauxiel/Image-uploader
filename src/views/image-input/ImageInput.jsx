@@ -6,12 +6,15 @@ import React from "react";
 
 
 
- function handleImageUpload(evt) {
-    uploadImage(evt.target.files[0])
-  }
+ 
 
 
 function ImageInput({ uploadImage }) {
+
+
+  function handleImageUpload(evt) {
+    uploadImage(evt.target.files[0])
+  }
 
     return (
         <>

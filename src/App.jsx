@@ -7,6 +7,9 @@ import ImageInput from "./views/image-input/ImageInput";
 import Loading from './views/loading/Loading';
 import ImageUploaded from './views/image-uploaded/ImageUploaded';
 // import DragandDrop from "./components/drag-and-drop/DragandDrop";
+import { storage } from './firebase';
+import { ref, uploadBytes } from 'firebase/storage';
+import { v4 } from 'uuid';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -15,7 +18,14 @@ function App() {
 
   const uploadImage =async(file) => {
     setState('uploading');
+           try {
+              const imageRef = ref(storage, `images/${file.name + v4()}`)
+              uploadBytes(imageRef, file).then(() => {
+                alert("image uploaded")
+              })
+           } catch {
 
+           }
   }
 
   return (
