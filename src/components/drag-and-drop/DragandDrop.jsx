@@ -2,9 +2,11 @@ import React from "react";
 import "./drag-drop.scss";
 import logo from "../../assets/images/logo.svg";
 
-function DragandDrop(props) {
+function DragandDrop({ uploadImage }) {
   const handleonDrop = (e) => {
     e.preventDefault();
+    const imageFile = e.dataTransfer.files
+    uploadImage(imageFile['0'])
   };
 
   const handleonDrag = (e) => {
