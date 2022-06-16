@@ -8,7 +8,7 @@ const ButtonInput = ({handleImageUpload}) => {
 
         <label>
             <input type="file" onChange = {handleImageUpload}/>
-            Choose a file
+            
         </label>
     )
 }

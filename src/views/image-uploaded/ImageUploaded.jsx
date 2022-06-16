@@ -1,9 +1,16 @@
 import React from "react";
-
+import './image-uploaded.scss'
  import Header from "../../components/header/Header";
+ 
 
 
-function ImageUploaded() {
+
+function ImageUploaded({imageUrl}) {
+
+
+    function onClick () {
+        navigator.clipboard.writeText(imageUrl)
+    }
 
     return (
         <>
@@ -12,10 +19,13 @@ function ImageUploaded() {
           </Header>
 
            <div className="image__container">
-               <img src="" alt=""/>
+               <img src= {imageUrl} alt=""/>
            </div>
          
-          <Button className = "btn">Copy Link</Button>
+          <div>
+               <div>{imageUrl}</div>
+               <button onClick = {onClick}>Copy Link</button>
+          </div>
           
           
         </>
