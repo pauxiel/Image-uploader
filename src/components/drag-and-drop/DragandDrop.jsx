@@ -40,9 +40,9 @@ function DragandDrop({ uploadImage }) {
       onDrag={handleonDrag}
       onDragLeave={handleonDragLeave}
       onDragEnter={handleonDragEnter}
-      style={{ border: `2px dashed ${borderColor}` }}
+      style={{ border: `1px dashed ${borderColor}` }}
     >
-      upload your image box with dash lined and iamge inside
+     
       <div className="dropzone__logo">
         <img src={logo} height="150" alt="" />
       </div>

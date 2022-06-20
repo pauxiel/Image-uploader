@@ -2,14 +2,16 @@ import './button-input.scss'
 
 const ButtonInput = ({handleImageUpload}) => {
     return (
-        // <button className={`btn ${props.className}`}>
-        //     {props.children}
-        // </button>
-
-        <label>
-            <input type="file" onChange = {handleImageUpload}/>
-            
+       <>
+         <div className = 'ortext'>or</div>
+        <label className = 'button__label'>
+            <input className = 'button__hidden' type="file" onChange = {handleImageUpload}/>
+               Choose a File
         </label>
+       
+       </>
+
+        
     )
 }
 
