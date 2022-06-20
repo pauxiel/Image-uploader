@@ -1,12 +1,17 @@
 import React from "react";
- 
+ import './loading.scss';
 
 
 function Loading() {
 
     return (
         <>
-          <h2>Loading</h2>
+          <h2>Uploading</h2>
+          <div className="loading">
+            <div className="loading__animation">
+
+            </div>
+          </div>
           
           
         </>

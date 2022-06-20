@@ -21,10 +21,10 @@ function App() {
     try {
       const imageRef = ref(storage, `images/${file.name + v4()}`);
       uploadBytes(imageRef, file).then((snapshot) => {
-        alert("file uploaded");
+        // alert("file uploaded");
         // console.log(getDownloadURL(snapshot.ref));
         getDownloadURL(snapshot.ref).then((imageUrl) => {
-          console.log(imageUrl);
+          // console.log(imageUrl);
           setImageUrl(imageUrl);
           setState('success');
         });
