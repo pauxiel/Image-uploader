@@ -22,9 +22,9 @@ function ImageUploaded({imageUrl}) {
                <img src= {imageUrl} alt=""/>
            </div>
          
-          <div>
-               <div>{imageUrl}</div>
-               <button onClick = {onClick}>Copy Link</button>
+          <div className = 'placeholder'>
+               <div className = 'placeholder__url'>{imageUrl}</div>
+               <button className = 'placeholder__btn' onClick = {onClick}>Copy Link</button>
           </div>
           
           
