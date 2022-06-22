@@ -92,5 +92,5 @@ $ npm run dev
 
 ## Contact
 
-- GitHub [@Pauxiel](https://{github.com/pauxiel})
-- Twitter [@obayuwanapaul](https://{twitter.com/obayuwanapaul})
+- GitHub [@Pauxiel](https://github.com/pauxiel)
+- Twitter [@obayuwanapaul](https://twitter.com/obayuwanapaul)
